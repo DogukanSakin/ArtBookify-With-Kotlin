@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:background="#161616">
+
+    <EditText
+        android:id="@+id/yearText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/my_input"
+        android:drawableStart="@drawable/ic_date"
+        android:drawablePadding="12dp"
+        android:ems="10"
+
+        android:hint="Year"
+        android:inputType="textPersonName"
+        android:textColor="#fffa50"
+        android:textColorHint="#fffa50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artistNameText" />
+
+    <EditText
+        android:id="@+id/artNameText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/my_input"
+        android:drawableStart="@drawable/ic_artname"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Art Name"
+        android:inputType="textPersonName"
+
+        android:textColor="#fffa50"
+        android:textColorHint="#fffa50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <EditText
+        android:id="@+id/artistNameText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/my_input"
+        android:drawableStart="@drawable/ic_artist"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Artist Name"
+
+        android:inputType="textPersonName"
+        android:textColor="#fffa50"
+        android:textColorHint="#fffa50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artNameText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:onClick="uploadImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imageSelectIcon" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FFF817"
+        android:onClick="saveInfo"
+        android:text="Save"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
