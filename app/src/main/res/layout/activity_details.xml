@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailsActivity"
-    android:background="#161616">
+    android:background="#161616"
+    >
 
     <EditText
         android:id="@+id/yearText"
@@ -33,19 +34,22 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/my_input"
         android:drawableStart="@drawable/ic_artname"
         android:drawablePadding="12dp"
+
         android:ems="10"
         android:hint="Art Name"
         android:inputType="textPersonName"
-
         android:textColor="#fffa50"
         android:textColorHint="#fffa50"
+        app:layout_constraintBottom_toTopOf="@+id/artistNameText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="252dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/artistNameText"
@@ -73,11 +77,13 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
         android:onClick="uploadImage"
+        app:layout_constraintBottom_toTopOf="@+id/artNameText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imageSelectIcon" />
+        app:srcCompat="@drawable/image_select_icon" />
 
     <Button
         android:id="@+id/saveButton"
